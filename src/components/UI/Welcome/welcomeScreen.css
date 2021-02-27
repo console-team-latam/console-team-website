@@ -1,0 +1,15 @@
+
+      .welcome__main-container {
+        position: absolute;
+        width: 180rem;
+        height: 180rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: center;
+        display: grid;
+        grid-template-columns: repeat(60, auto);
+        grid-template-rows: repeat(60, auto);
+        gap: 10px;
+        background-color: #222;
+      }
