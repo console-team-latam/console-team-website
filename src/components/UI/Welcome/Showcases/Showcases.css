@@ -9,10 +9,14 @@
 
 
 .showcase-0{
-    grid-column: 1/61;
-        grid-row: 1/26;
-        top: 0;
-        transition: all 0.5s ease-in-out;
+  grid-column: 1/61;
+  grid-row: 1/26;
+  top: -100%;
+  transition: all 1s ease-in-out;
+}
+
+.showcase-0-transition{
+  top: 0%;
 }
 
 .showcase-1 {
@@ -23,9 +27,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    left: 0;
-    transition: all 0.5s ease-in-out;
+    left: -100%;
+    transition: all 1s ease-in-out;
+  }
 
+  .showcase-1-transition{
+    left: 0%;
   }
 
   .showcase-1 h1 {
@@ -40,23 +47,39 @@
   .showcase-2 {
     grid-row: 27/34;
     grid-column: 20/29;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+
+  .showcase-2-transition{
+    opacity: 1;
+    transform: rotate(0);
+
   }
 
   .showcase-3 {
     grid-row: 27/61;
     grid-column: 30/61;
     background-color: orange;
-    right:0;
-    transition: all 0.5s ease-in-out;
+    right:-100%;
+    transition: all 1s ease-in-out;
+  }
 
+  .showcase-3-transition{
+    right: 0%;
   }
 
   .showcase-4 {
     grid-row: 35/61;
     grid-column: 1/29;
     background-color: yellowgreen;
-    top: 0;
-    transition: all 0.5s ease-in-out;
+    top: 100%;
+    transition: all 1s ease-in-out;
+  }
+
+  .showcase-4-transition{
+    top: 0%;
   }
 
   .showcase-0::after,

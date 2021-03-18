@@ -1,0 +1,17 @@
+.header__style{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 1rem;
+    list-style: none;
+}

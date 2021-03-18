@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Showcases } from "./Showcases/Showcases";
 
 import "./welcomeScreen.css";
 export const WelcomeScreen = () => {
-  
+  const [showWelcome, setShowWelcome] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowWelcome((s) => !s);
+    }, 3000);
+  }, []);
+
   const welcomeShowcases = [
     {
       title: "",
@@ -21,7 +28,13 @@ export const WelcomeScreen = () => {
   ];
 
   return (
-    <div className="welcome__main-container">
+    <div
+      className={
+        showWelcome === false
+          ? "welcome__opacity welcome__main-container"
+          : "welcome__main-container"
+      }
+    >
       {welcomeShowcases.map((showcase, index) => {
         return <Showcases key={showcase.id} {...showcase} item={index} />;
       })}
