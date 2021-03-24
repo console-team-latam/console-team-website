@@ -1,29 +1,23 @@
-import React, { useEffect, useState }  from "react";
+import React, { useEffect, useState } from "react";
 import { MainScreen } from "./components/UI/MainScreen/MainScreen";
 import { WelcomeScreen } from "./components/UI/Welcome/WelcomeScreen";
 
 import "./consoleTeamApp.css";
 
 export const ConsoleTeamApp = () => {
- 
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
-   setTimeout(() => {
-      setShowWelcome(s => !s);
+    setTimeout(() => {
+      setShowWelcome((s) => !s);
     }, 5000);
+  }, []);
 
-  },[]);
-
-  const myDiv = (
-    <WelcomeScreen/>
-  )
+  const myDiv = <WelcomeScreen />;
 
   return (
     <div>
-      <div>
-      <h1>{showWelcome &&  myDiv  }</h1>
-    </div>
+      {showWelcome && myDiv}
       <MainScreen />
     </div>
   );

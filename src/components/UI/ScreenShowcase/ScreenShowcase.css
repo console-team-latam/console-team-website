@@ -1,0 +1,6 @@
+.screen-showcase{
+    display: flex;
+    z-index: -1;
+    color: white;
+}
+

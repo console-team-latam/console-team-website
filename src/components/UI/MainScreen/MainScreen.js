@@ -1,12 +1,11 @@
-import React from 'react'
-import { NavBar } from '../NavBar/NavBar'
-import { VideoScreenShowcase } from '../VideoScreen/VideoScreenShowcase'
+import React from "react";
+import { ScreenShowcase } from "../ScreenShowcase/ScreenShowcase";
 
+import "./MainScreen.css";
 export const MainScreen = () => {
-    return (
-        <div>
-            <NavBar/>
-            <VideoScreenShowcase/>
-        </div>
-    )
-}
+  return (
+    <div className="main__container">
+      <ScreenShowcase />
+    </div>
+  );
+};

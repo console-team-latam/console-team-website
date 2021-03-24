@@ -1,0 +1,15 @@
+.btn{
+    display: block;
+    width: 10rem;
+    height: 3.5rem;
+    background-color: teal;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 36, 36);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    z-index: -1;
+    padding-top: 40%
+}
